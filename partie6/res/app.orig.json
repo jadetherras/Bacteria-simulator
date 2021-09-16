@@ -1,0 +1,374 @@
+{
+    "debug" : true,
+    "simulation":{
+      "time":{
+         "factor":1,
+         "max dt":0.05,
+	  "fixed step" : 0.01
+      },
+	"background" : "sand.png",
+	"debug background" : "sand.png",
+	"size"       : 1000
+    },
+    "generator" : {
+        "nutriment" : {
+            "delay" : 1.e7,
+            "prob" : 0.8
+        }
+    },
+    "map" : "map.json",
+    "nutriments" : {
+	"growth" : {
+            "speed" : 5,
+            "max temperature" : 60,
+            "min temperature" : 30
+        },
+        "quantity" : {
+            "max" : 50,
+            "min" : 40
+        },
+        "texture" : "foodA.png",
+        "A" : {
+            "growth" : {
+                "speed" : 5,
+                "max temperature" : 60,
+                "min temperature" : 30
+            },
+            "quantity" : {
+                "max" : 50,
+                "min" : 40
+            },
+            "texture" : "foodA.png"
+        },
+        "B" : {
+            "growth" : {
+                "speed" : 10,
+                "max temperature" : 80,
+                "min temperature" : 50
+            },
+            "nutritive factor" : 3,
+            "poison factor" : 5,
+            "quantity" : {
+                "max" : 50,
+                "min" : 40
+            },
+            "resistance factor" : 100,
+            "texture" : "foodB.png"
+        }
+    },
+    "petri dish" : {
+        "gradient" : {
+            "exponent" : {
+		"min" : 0,
+		"max" : 1.5,
+		"delta" : 0.1
+	    }
+        },
+	
+        "temperature" : {
+	    "min" : -10.0,
+	    "max" : 100.0,
+	    "default" : 25,
+	    "delta": 0.5
+	}
+    },
+    "simple bacterium" : {
+        "color" : {
+            "a" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 1,
+                "max" : 1,
+                "min" : 0.5,
+                "rate" : 0.6,
+                "sigma" : 0.05
+            },
+            "b" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 1,
+                "max" : 1,
+                "min" : 0,
+                "rate" : 0.95,
+                "sigma" : 0.15
+            },
+            "g" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 0,
+                "max" : 1,
+                "min" : 0,
+                "rate" : 0.8,
+                "sigma" : 0.05
+            },
+            "r" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 0,
+                "max" : 1,
+                "min" : 0,
+                "rate" : 0.8,
+                "sigma" : 0.1
+            }
+        },
+        "energy" : {
+            "consumption factor" : 0.2,
+            "division" : 120,
+            "max" : 100,
+            "min" : 50
+        },
+        "meal" : {
+            "delay" : 0.5,
+            "max" : 10
+        },
+        "radius" : {
+            "max" : 20,
+            "min" : 5
+        },
+        "speed" : {
+            "initial" : 30,
+            "rate" : 0.8,
+            "sigma" : 0.4
+        },
+        "tumble" : {
+            "algo" : "best of N",
+            "better" : {
+                "initial" : 5,
+                "rate" : 0.8,
+                "sigma" : 1
+            },
+            "worse" : {
+                "initial" : 0.5,
+                "rate" : 0.8,
+                "sigma" : 0.1
+            }
+        }
+    },
+
+    "stats" : {
+        "refresh rate" : 1
+    },
+    "swarm bacterium" : {
+        "color" : {
+            "a" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 1,
+                "max" : 1,
+                "min" : 0.5,
+                "rate" : 0.6,
+                "sigma" : 0.05
+            },
+            "b" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 0.2,
+                "max" : 0,
+                "min" : 0,
+                "rate" : 0.95,
+                "sigma" : 0.15
+            },
+            "g" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 1,
+                "max" : 1,
+                "min" : 0,
+                "rate" : 0.8,
+                "sigma" : 0.05
+            },
+            "r" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 0.2,
+                "max" : 1,
+                "min" : 0,
+                "rate" : 0.8,
+                "sigma" : 0.1
+            }
+        },
+        "energy" : {
+            "consumption factor" : 0.1,
+            "division" : 120,
+            "max" : 100,
+            "min" : 50
+        },
+        "meal" : {
+            "delay" : 0.5,
+            "max" : 10
+        },
+        "radius" : {
+            "max" : 20,
+            "min" : 5
+        },
+        "speed" : {
+            "initial" : 30
+        }
+    },
+    "swarms" : {
+        "1" : {
+            "color" : {
+                "a" : {
+                    "clamp max" : true,
+                    "clamp min" : true,
+                    "initial" : 1,
+                    "max" : 1,
+                    "min" : 0.5,
+                    "rate" : 0.6,
+                    "sigma" : 0.05
+                },
+                "b" : {
+                    "clamp max" : true,
+                    "clamp min" : true,
+                    "initial" : 0,
+                    "max" : 1,
+                    "min" : 0,
+                    "rate" : 0.95,
+                    "sigma" : 0.15
+                },
+                "g" : {
+                    "clamp max" : true,
+                    "clamp min" : true,
+                    "initial" : 1,
+                    "max" : 1,
+                    "min" : 0,
+                    "rate" : 0.8,
+                    "sigma" : 0.05
+                },
+                "r" : {
+                    "clamp max" : true,
+                    "clamp min" : true,
+                    "initial" : 0,
+                    "max" : 1,
+                    "min" : 0,
+                    "rate" : 0.8,
+                    "sigma" : 0.1
+                }
+            },
+            "force factor" : 25
+        },
+        "2" : {
+            "color" : {
+                "a" : {
+                    "clamp max" : true,
+                    "clamp min" : true,
+                    "initial" : 1,
+                    "max" : 1,
+                    "min" : 0.5,
+                    "rate" : 0.6,
+                    "sigma" : 0.05
+                },
+                "b" : {
+                    "clamp max" : true,
+                    "clamp min" : true,
+                    "initial" : 1,
+                    "max" : 1,
+                    "min" : 0,
+                    "rate" : 0.95,
+                    "sigma" : 0.15
+                },
+                "g" : {
+                    "clamp max" : true,
+                    "clamp min" : true,
+                    "initial" : 1,
+                    "max" : 1,
+                    "min" : 0,
+                    "rate" : 0.8,
+                    "sigma" : 0.05
+                },
+                "r" : {
+                    "clamp max" : true,
+                    "clamp min" : true,
+                    "initial" : 0,
+                    "max" : 1,
+                    "min" : 0,
+                    "rate" : 0.8,
+                    "sigma" : 0.1
+                }
+            },
+            "force factor" : 50
+        }
+    },
+    "twitching bacterium" : {
+        "color" : {
+            "a" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 1,
+                "max" : 1,
+                "min" : 0.5,
+                "rate" : 0.6,
+                "sigma" : 0.05
+            },
+            "b" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 0.3,
+                "max" : 1,
+                "min" : 0,
+                "rate" : 0.95,
+                "sigma" : 0.15
+            },
+            "g" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 0,
+                "max" : 1,
+                "min" : 0,
+                "rate" : 0.8,
+                "sigma" : 0.05
+            },
+            "r" : {
+                "clamp max" : true,
+                "clamp min" : true,
+                "initial" : 1,
+                "max" : 1,
+                "min" : 0,
+                "rate" : 0.8,
+                "sigma" : 0.1
+            }
+        },
+        "energy" : {
+            "consumption factor" : {
+                "move" : 0.4,
+                "tentacle" : 0.1
+            },
+            "division" : 120,
+            "max" : 100,
+            "min" : 50
+        },
+        "meal" : {
+            "delay" : 0.5,
+            "max" : 10
+        },
+        "radius" : {
+            "max" : 30,
+            "min" : 10
+        },
+        "speed factor" : 0.75,
+        "tentacle" : {
+            "length" : {
+                "initial" : 120,
+                "rate" : 0.8,
+                "sigma" : 15
+            },
+            "speed" : {
+                "initial" : 30,
+                "rate" : 0.8,
+                "sigma" : 10
+            }
+        }
+    },
+    "window" : {
+        "antialiasing level" : 4,
+        "title" : "INFOSV Simulation",
+        "simulation" : {
+	    "width":500,
+            "height":500
+         },
+        "stats" : { "width" : 200 }
+    },
+    "world" : {
+        "size" : 1000
+    }
+}

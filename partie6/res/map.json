@@ -1,0 +1,2225 @@
+{
+    "dish" : {
+        "bacteria" : [ {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.778988,
+                    "y" : 0.627039
+                },
+                "energy" : 93.4262,
+                "meal epoch" : 0.399412,
+                "position" : {
+                    "x" : 855.389,
+                    "y" : 1047.51
+                },
+                "properties" : [ {
+                        "name" : "speed",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 30,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 0.4
+                        }
+                    }, {
+                        "name" : "tumble better",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 5,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 1
+                        }
+                    }, {
+                        "name" : "tumble worse",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 0.5,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 0.1
+                        }
+                    }],
+                "radius" : 18.6379,
+                "subclass" : {
+                    "kind" : "simple bacterium",
+                    "position score" : 0.365128,
+                    "time animate" : 75.9839,
+                    "tumble epoch" : 0
+                },
+                "visible rotation" : -5.35096
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.993129,
+                    "y" : -0.117027
+                },
+                "energy" : 16.3366,
+                "meal epoch" : 0.260602,
+                "position" : {
+                    "x" : 832.745,
+                    "y" : 717.186
+                },
+                "properties" : [ ],
+                "radius" : 16.2032,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "1"
+                },
+                "visible rotation" : -3.0243
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.788544,
+                    "y" : 0.614979
+                },
+                "energy" : 98.587,
+                "meal epoch" : 0.346736,
+                "position" : {
+                    "x" : 947.082,
+                    "y" : 1072.74
+                },
+                "properties" : [ ],
+                "radius" : 11.8626,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "2"
+                },
+                "visible rotation" : 2.47923
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.00848433,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.998771,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.0321825,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.94848,
+                    "y" : 0.316836
+                },
+                "energy" : 49.6749,
+                "meal epoch" : 14.9368,
+                "position" : {
+                    "x" : 1062.39,
+                    "y" : 771.148
+                },
+                "properties" : [ ],
+                "radius" : 16.2032,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "1"
+                },
+                "visible rotation" : 6.60558
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.972114,
+                    "y" : -0.23451
+                },
+                "energy" : 18.513,
+                "meal epoch" : 17.2688,
+                "position" : {
+                    "x" : 1062.12,
+                    "y" : 703.365
+                },
+                "properties" : [ ],
+                "radius" : 19.6153,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "1"
+                },
+                "visible rotation" : -0.236714
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.97562,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.424145,
+                    "y" : -0.905594
+                },
+                "energy" : 73.9382,
+                "meal epoch" : 16.4677,
+                "position" : {
+                    "x" : 1028.72,
+                    "y" : 968.2
+                },
+                "properties" : [ ],
+                "radius" : 11.8626,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "2"
+                },
+                "visible rotation" : -1.13278
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.685382,
+                    "y" : -0.728184
+                },
+                "energy" : 81.7543,
+                "meal epoch" : 0.086523,
+                "position" : {
+                    "x" : 977.766,
+                    "y" : 1020.71
+                },
+                "properties" : [ ],
+                "radius" : 13.5485,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "2"
+                },
+                "visible rotation" : -0.815669
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.973363,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.0922878,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.977394,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.0503994,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.217799,
+                    "y" : 0.975994
+                },
+                "energy" : 99.0216,
+                "meal epoch" : 5.20653,
+                "position" : {
+                    "x" : 937.036,
+                    "y" : 841.245
+                },
+                "properties" : [ ],
+                "radius" : 19.6153,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "1"
+                },
+                "visible rotation" : 1.35124
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.908134,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.0103295,
+                    "y" : -0.999947
+                },
+                "energy" : 29.8148,
+                "meal epoch" : 15.9458,
+                "position" : {
+                    "x" : 935.925,
+                    "y" : 595.552
+                },
+                "properties" : [ ],
+                "radius" : 16.2032,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "1"
+                },
+                "visible rotation" : 4.70206
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.3,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.529669,
+                    "y" : -0.848204
+                },
+                "energy" : 41.9477,
+                "meal epoch" : 7.06977,
+                "position" : {
+                    "x" : 798.019,
+                    "y" : 1270.9
+                },
+                "properties" : [ {
+                        "name" : "tentacle length",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 120,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 15
+                        }
+                    }, {
+                        "name" : "tentacle speed",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 30,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 10
+                        }
+                    }],
+                "radius" : 19.5114,
+                "subclass" : {
+                    "grip position" : {
+                        "x" : 802.772,
+                        "y" : 1246.71
+                    },
+                    "grip radius" : 4.87786,
+                    "kind" : "twitching bacterium",
+                    "state" : 2
+                },
+                "visible rotation" : -2.12901
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.947233,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.160394,
+                    "y" : 0.987053
+                },
+                "energy" : 32.1292,
+                "meal epoch" : 11.8358,
+                "position" : {
+                    "x" : 1010.12,
+                    "y" : 1097.76
+                },
+                "properties" : [ ],
+                "radius" : 11.8626,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "2"
+                },
+                "visible rotation" : 1.40971
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.318419,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.844073,
+                    "y" : -0.536228
+                },
+                "energy" : 81.7438,
+                "meal epoch" : 8.08004,
+                "position" : {
+                    "x" : 808.553,
+                    "y" : 1284.77
+                },
+                "properties" : [ {
+                        "name" : "tentacle speed",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 32.3486,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 10
+                        }
+                    }, {
+                        "name" : "tentacle length",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 125.125,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 15
+                        }
+                    }],
+                "radius" : 19.5114,
+                "subclass" : {
+                    "grip position" : {
+                        "x" : 804.751,
+                        "y" : 1261.04
+                    },
+                    "grip radius" : 4.87786,
+                    "kind" : "twitching bacterium",
+                    "state" : 2
+                },
+                "visible rotation" : -2.57563
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.826237,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.386067,
+                    "y" : -0.922471
+                },
+                "energy" : 71.911,
+                "meal epoch" : 8.4287,
+                "position" : {
+                    "x" : 972.703,
+                    "y" : 967.18
+                },
+                "properties" : [ ],
+                "radius" : 13.5485,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "2"
+                },
+                "visible rotation" : -1.96716
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.872781,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.125694,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.160394,
+                    "y" : -0.987053
+                },
+                "energy" : 27.8536,
+                "meal epoch" : 11.8358,
+                "position" : {
+                    "x" : 988.24,
+                    "y" : 962.72
+                },
+                "properties" : [ ],
+                "radius" : 11.8626,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "2"
+                },
+                "visible rotation" : -1.73189
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.947889,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.0285073,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.954378,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.132647,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.979098,
+                    "y" : -0.203387
+                },
+                "energy" : 70.8736,
+                "meal epoch" : 6.30332,
+                "position" : {
+                    "x" : 1014.88,
+                    "y" : 716.668
+                },
+                "properties" : [ ],
+                "radius" : 19.6153,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "1"
+                },
+                "visible rotation" : -0.204816
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.227715,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.478064,
+                    "y" : -0.878325
+                },
+                "energy" : 110.085,
+                "meal epoch" : 0.311636,
+                "position" : {
+                    "x" : 789.364,
+                    "y" : 1263.06
+                },
+                "properties" : [ {
+                        "name" : "tentacle speed",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 19.1902,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 10
+                        }
+                    }, {
+                        "name" : "tentacle length",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 115.053,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 15
+                        }
+                    }],
+                "radius" : 19.5114,
+                "subclass" : {
+                    "grip position" : {
+                        "x" : 784.832,
+                        "y" : 1274.58
+                    },
+                    "grip radius" : 4.87786,
+                    "kind" : "twitching bacterium",
+                    "state" : 2
+                },
+                "visible rotation" : 4.21394
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.586278,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.931643,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.18949,
+                    "y" : -0.981883
+                },
+                "energy" : 39.9691,
+                "meal epoch" : 6.56485,
+                "position" : {
+                    "x" : 818.578,
+                    "y" : 1275.61
+                },
+                "properties" : [ {
+                        "name" : "tentacle length",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 114.537,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 15
+                        }
+                    }, {
+                        "name" : "tentacle speed",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 38.996,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 10
+                        }
+                    }],
+                "radius" : 19.5114,
+                "subclass" : {
+                    "grip position" : {
+                        "x" : 836.124,
+                        "y" : 1197.72
+                    },
+                    "grip radius" : 4.87786,
+                    "kind" : "twitching bacterium",
+                    "state" : 2
+                },
+                "visible rotation" : -1.38015
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.0578344,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.715978,
+                    "y" : -0.698123
+                },
+                "energy" : 74.6018,
+                "meal epoch" : 0.416829,
+                "position" : {
+                    "x" : 950.222,
+                    "y" : 982.609
+                },
+                "properties" : [ ],
+                "radius" : 13.5485,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "2"
+                },
+                "visible rotation" : -2.36882
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.973363,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.264167,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.971854,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.925438,
+                    "y" : -0.3789
+                },
+                "energy" : 55.1813,
+                "meal epoch" : 4.19646,
+                "position" : {
+                    "x" : 975.491,
+                    "y" : 729.994
+                },
+                "properties" : [ ],
+                "radius" : 19.6153,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "1"
+                },
+                "visible rotation" : 5.89458
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.894201,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.0179661,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.995059,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.196143,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.745675,
+                    "y" : 0.66631
+                },
+                "energy" : 55.9298,
+                "meal epoch" : 1.53159,
+                "position" : {
+                    "x" : 850.64,
+                    "y" : 727.627
+                },
+                "properties" : [ ],
+                "radius" : 19.6153,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "1"
+                },
+                "visible rotation" : 2.41234
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.0666146,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.336057,
+                    "y" : -0.941842
+                },
+                "energy" : 62.3109,
+                "meal epoch" : 6.56485,
+                "position" : {
+                    "x" : 816.233,
+                    "y" : 1277.9
+                },
+                "properties" : [ {
+                        "name" : "tentacle speed",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 14.97,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 10
+                        }
+                    }, {
+                        "name" : "tentacle length",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 129.561,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 15
+                        }
+                    }],
+                "radius" : 19.5114,
+                "subclass" : {
+                    "grip position" : {
+                        "x" : 833.411,
+                        "y" : 1171.71
+                    },
+                    "grip radius" : 4.87785,
+                    "kind" : "twitching bacterium",
+                    "state" : 2
+                },
+                "visible rotation" : -1.22807
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.783674,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.881662,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.374045,
+                    "y" : 0.92741
+                },
+                "energy" : 62.3147,
+                "meal epoch" : 1.68871,
+                "position" : {
+                    "x" : 838.759,
+                    "y" : 1280.15
+                },
+                "properties" : [ {
+                        "name" : "tentacle speed",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 35.5001,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 10
+                        }
+                    }, {
+                        "name" : "tentacle length",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 114.537,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 15
+                        }
+                    }],
+                "radius" : 19.5114,
+                "subclass" : {
+                    "grip position" : {
+                        "x" : 839.741,
+                        "y" : 1267.6
+                    },
+                    "grip radius" : 4.87785,
+                    "kind" : "twitching bacterium",
+                    "state" : 2
+                },
+                "visible rotation" : 1.18743
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.971493,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.290093,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.0805757,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.552022,
+                    "y" : -0.83383
+                },
+                "energy" : 46.0425,
+                "meal epoch" : 6.14672,
+                "position" : {
+                    "x" : 807.685,
+                    "y" : 1268.07
+                },
+                "properties" : [ {
+                        "name" : "tentacle length",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 121.91,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 15
+                        }
+                    }, {
+                        "name" : "tentacle speed",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 26.4561,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 10
+                        }
+                    }],
+                "radius" : 19.5114,
+                "subclass" : {
+                    "grip position" : {
+                        "x" : 843.432,
+                        "y" : 1189.9
+                    },
+                    "grip radius" : 4.87785,
+                    "kind" : "twitching bacterium",
+                    "state" : 4
+                },
+                "visible rotation" : 5.29718
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.953167,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.505286,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.0231265,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : -0.977316,
+                    "y" : -0.211786
+                },
+                "energy" : 14.6032,
+                "meal epoch" : 0.17322,
+                "position" : {
+                    "x" : 823.659,
+                    "y" : 721.965
+                },
+                "properties" : [ ],
+                "radius" : 19.6153,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "1"
+                },
+                "visible rotation" : 3.35499
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.828133,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.988843,
+                    "y" : 0.148963
+                },
+                "energy" : 83.0091,
+                "meal epoch" : 0.068838,
+                "position" : {
+                    "x" : 839.772,
+                    "y" : 1054.97
+                },
+                "properties" : [ {
+                        "name" : "tumble worse",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 0.5,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 0.1
+                        }
+                    }, {
+                        "name" : "tumble better",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 4.83579,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 1
+                        }
+                    }, {
+                        "name" : "speed",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 29.6208,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 0.4
+                        }
+                    }],
+                "radius" : 18.6379,
+                "subclass" : {
+                    "kind" : "simple bacterium",
+                    "position score" : 0.376811,
+                    "time animate" : 9.04231,
+                    "tumble epoch" : 0.086523
+                },
+                "visible rotation" : -6.13367
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.738555,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.0134333,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.924447,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.506483,
+                    "y" : -0.86225
+                },
+                "energy" : 79.3732,
+                "meal epoch" : 0.678162,
+                "position" : {
+                    "x" : 854.262,
+                    "y" : 1270.91
+                },
+                "properties" : [ {
+                        "name" : "tentacle length",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 114.537,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 15
+                        }
+                    }, {
+                        "name" : "tentacle speed",
+                        "value" : {
+                            "clamp max" : false,
+                            "clamp min" : true,
+                            "initial" : 35.5001,
+                            "min" : 0,
+                            "rate" : 0.8,
+                            "sigma" : 10
+                        }
+                    }],
+                "radius" : 19.5114,
+                "subclass" : {
+                    "grip position" : {
+                        "x" : 852.735,
+                        "y" : 1219.84
+                    },
+                    "grip radius" : 4.87785,
+                    "kind" : "twitching bacterium",
+                    "state" : 2
+                },
+                "visible rotation" : -1.0397
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.924315,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.120209,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.931899,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.231539,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.745675,
+                    "y" : -0.66631
+                },
+                "energy" : 59.3866,
+                "meal epoch" : 1.53159,
+                "position" : {
+                    "x" : 918.166,
+                    "y" : 685.96
+                },
+                "properties" : [ ],
+                "radius" : 19.6153,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "1"
+                },
+                "visible rotation" : 5.55394
+            }, {
+                "abstinent" : false,
+                "color" : {
+                    "a" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.863842,
+                        "max" : 1,
+                        "min" : 0.5,
+                        "rate" : 0.6,
+                        "sigma" : 0.05
+                    },
+                    "b" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 1,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.95,
+                        "sigma" : 0.15
+                    },
+                    "g" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0.946313,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.05
+                    },
+                    "r" : {
+                        "clamp max" : true,
+                        "clamp min" : true,
+                        "initial" : 0,
+                        "max" : 1,
+                        "min" : 0,
+                        "rate" : 0.8,
+                        "sigma" : 0.1
+                    }
+                },
+                "direction" : {
+                    "x" : 0.996657,
+                    "y" : 0.0816992
+                },
+                "energy" : 78.8187,
+                "meal epoch" : 0.086523,
+                "position" : {
+                    "x" : 955.091,
+                    "y" : 1044.45
+                },
+                "properties" : [ ],
+                "radius" : 13.5485,
+                "subclass" : {
+                    "kind" : "swarm bacterium",
+                    "speed" : 30,
+                    "swarm id" : "2"
+                },
+                "visible rotation" : -5.49171
+            }],
+        "nutriments" : [ {
+                "kind" : "A",
+                "position" : {
+                    "x" : 361.209,
+                    "y" : 1483.79
+                },
+                "quantity" : 100.152
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 599.907,
+                    "y" : 448.06
+                },
+                "quantity" : 49.8869
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 1466.63,
+                    "y" : 1295.25
+                },
+                "quantity" : 42.3417
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1549.54,
+                    "y" : 1293.95
+                },
+                "quantity" : 100.315
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1082.77,
+                    "y" : 333.442
+                },
+                "quantity" : 100.126
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 783.541,
+                    "y" : 704.784
+                },
+                "quantity" : 31.8519
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 530.245,
+                    "y" : 1139.51
+                },
+                "quantity" : 100.036
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 565.72,
+                    "y" : 583.812
+                },
+                "quantity" : 100.26
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 991.388,
+                    "y" : 225.425
+                },
+                "quantity" : 100.042
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 838.123,
+                    "y" : 204.578
+                },
+                "quantity" : 46.6157
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 907.855,
+                    "y" : 1654.13
+                },
+                "quantity" : 100.08
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 609.184,
+                    "y" : 1633.47
+                },
+                "quantity" : 100.226
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 453.486,
+                    "y" : 978.634
+                },
+                "quantity" : 41.0497
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 433.318,
+                    "y" : 379.173
+                },
+                "quantity" : 100.222
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 742.21,
+                    "y" : 697.855
+                },
+                "quantity" : 76.1085
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 598.876,
+                    "y" : 546.241
+                },
+                "quantity" : 100.092
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 1222.79,
+                    "y" : 543.406
+                },
+                "quantity" : 23.4397
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1427.75,
+                    "y" : 300.017
+                },
+                "quantity" : 100.123
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1608,
+                    "y" : 664.829
+                },
+                "quantity" : 100.138
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1195.45,
+                    "y" : 1603.55
+                },
+                "quantity" : 100.152
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 1253.15,
+                    "y" : 1396.87
+                },
+                "quantity" : 49.1376
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1284.84,
+                    "y" : 1325.03
+                },
+                "quantity" : 100.055
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 714.918,
+                    "y" : 1134.34
+                },
+                "quantity" : 100.205
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 1534.46,
+                    "y" : 476.898
+                },
+                "quantity" : 45.5823
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 545.885,
+                    "y" : 510.707
+                },
+                "quantity" : 100.055
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1802.2,
+                    "y" : 1145.3
+                },
+                "quantity" : 100.065
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 784.709,
+                    "y" : 1222.17
+                },
+                "quantity" : 20.7139
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 638.949,
+                    "y" : 1326.35
+                },
+                "quantity" : 45.8793
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 571.226,
+                    "y" : 549.364
+                },
+                "quantity" : 100.004
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 544.242,
+                    "y" : 1203.91
+                },
+                "quantity" : 100.056
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 881.109,
+                    "y" : 1235.57
+                },
+                "quantity" : 22.9799
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 703.226,
+                    "y" : 1315.63
+                },
+                "quantity" : 73.0199
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 609.305,
+                    "y" : 328.623
+                },
+                "quantity" : 100.072
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 1518.82,
+                    "y" : 841.441
+                },
+                "quantity" : 42.6971
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 680.335,
+                    "y" : 1611.78
+                },
+                "quantity" : 100.019
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 955.485,
+                    "y" : 1044.42
+                },
+                "quantity" : 13.1634
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1234.47,
+                    "y" : 1251.92
+                },
+                "quantity" : 100.074
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1531.03,
+                    "y" : 1371.33
+                },
+                "quantity" : 100.057
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1089.31,
+                    "y" : 1246.79
+                },
+                "quantity" : 100.042
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 1514.8,
+                    "y" : 913.064
+                },
+                "quantity" : 46.6295
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 653.046,
+                    "y" : 953.277
+                },
+                "quantity" : 92.9018
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 396.998,
+                    "y" : 538.455
+                },
+                "quantity" : 95.4164
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1111.09,
+                    "y" : 1781.32
+                },
+                "quantity" : 85.1661
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1648.83,
+                    "y" : 787.163
+                },
+                "quantity" : 72.4035
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 1409.46,
+                    "y" : 645.121
+                },
+                "quantity" : 72.7302
+            }, {
+                "kind" : "B",
+                "position" : {
+                    "x" : 628.895,
+                    "y" : 467.254
+                },
+                "quantity" : 44.7885
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 291.87,
+                    "y" : 1485.48
+                },
+                "quantity" : 63.9733
+            }, {
+                "kind" : "A",
+                "position" : {
+                    "x" : 550.428,
+                    "y" : 833.968
+                },
+                "quantity" : 49.0125
+            }],
+        "swarms" : [ {
+                "id" : "1"
+            }, {
+                "id" : "2"
+            }]
+    }
+}

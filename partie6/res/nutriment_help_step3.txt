@@ -1,0 +1,21 @@
+-------------------------------
+	NUTRIMENT_TEST
+set food generator delay 
+to high value (1e08)
+to prevent food generation
+--------- Help ----------------
+MW : mouse wheel
+MP : mouse position
+-------------------------------
+Space	: toggle pause
+D	: toggle debug mode
+R	: resets simulation
+MW	: Zoom
+Esc	: close window
+C	: refresh config
+Arrows	: move simulation
+	view
+N	: add NutrimentB at MP
+Shift-N	: addNutrimentA at MP
+T	: take 15 from last 
+	 created nutriment

@@ -1,0 +1,4 @@
+--------- help ------------
+Space : toggle pause
+D : toggle debug mode
+Esc : close 
