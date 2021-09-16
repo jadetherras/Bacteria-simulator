@@ -1,0 +1,162 @@
+=====================================================================
+Le programme bacteria simulator a pour but de modéliser l'évolution de bactéries soumises à des conditions physiques et à de la compétition avec d'autres bactéries au sein de la boîte de Pétri
+
+Le laboratoire contient une boite permettant de faire évoluer ces micro-organismes.
+Elle est régie par différents paramètres :
+- la température de la boite, influant notamment sur les nutriments
+- le gradient de nutriment, influant sur la perception des bactéries de ce qui les entourent.
+
+Les nutriments apparaissent aléatoirement au sein de la boite et se développent jusqu'à une taille maximale. Ils sont consommables par les bactéries afin que ces organismes emmagasinent de l'énergie. 
+Deux types différents existent, possédant des caractéristiques (impact de la température, couleurs, effet) particulières : 
+- les verts, dont les effets sur les bactéries ne dépendent pas de la nature de ces dernières.
+- les bleus, aux effets spécifiques.
+
+Une bactérie est caractérisée par :
+- une énergie qui varie au cours du temps
+- la capacité de se déplacer, de muter, et celle de se nourrir de nutriments
+- la possibilité de mourrir et de se diviser (et par là même, de se cloner)
+
+Dans le cadre du projet 3 types ont vu le jour : les batteries simples, à tentacule et de groupe : 
+-Les bactéries simples agissent seules et se déplacent à l'aide de leurs flagelles pour trouver des nutriments.
+-Les bactéries à tentacule cherchent avec leur grappin de la nourriture, et s'en servent pour s'en rapprocher dès qu'elle l'ont identifié.
+-les bactéries de groupe agissent ensemble, suivant le leader le mieux placé dans la boite. Il en existe deux groupes.
+
+Chacune d'entre elles interagit avec les autres en réaction à la nature de leur environnement, mues par la compétition pour la nourriture qu'elles se doivent de mener à bien.
+
+La partie statistique du programme permet de faire apparaitre des graphiques relatifs à la boite, tels que le nombre de bactéries, de nutriments, ou l'évolution des caractères mutables (vitesse, longueur des tentacules par exemple).
+
+
+
+##COMPILATION ET EXÉCUTION
+
+Ce projet utilise  [Cmake](https://cmake.org/) pour compiler :
+
+* en ligne de commande :
+    - dans le dossier build: cmake ../src
+    - make nom_cible pour la génération de la cible
+
+* Dans QTCreator:
+       - mise en place du projet : ouvrir le fichier src/CmakeLists.txt
+       - choisir la cible à exécuter
+
+La partie 6 est la dernière partie fonctionnelle.
+
+##CIBLES PRINCIPALES
+
+application -> correspond à l'application finale, permet d'accéder à toutes les fonctionnalités.
+
+Les autres cibles exécutables correspondent toutes à l'énoncé du projet.
+
+## FICHIERS DE CONFIGURATION
+
+Le fichier app.json a été modifié de telle sorte qu'il permet d'observer tous les comportements.
+
+Des préférences procédurales permettant d'observer tel ou tel élément en particulier concernant les extensions sont décrites plus bas
+
+## COMMANDES
+
+Les commandes sont données dans l'encadré à droite de la boite de pétri.
+Space	  : toggle pause
+D	  : toggle debug mode
+R	  : resets simulation
+MW     	  : Zoom
+Esc	  : close window
+C	  : refresh config
+Arrows 	  : move simulation
+	  	view
+Tab	  : switch to next
+	    control
+PageUp	  : increase CC
+PageDown  : decrease CC
+S	  : add simple bacterium
+T	  : add TwitchingMotility
+		bacterium at MP
+1-2	  : add swarm bacterium
+	 	of type 1-2 at MP
+P	  : add poisonous bacterium
+O	  : add obstacle
+N         : add Poisonous
+V         : add virus
+B         : remove separator
+
+les touches P,O,N,V,B ont été rajoutées avec les extensions
+
+### MODIFICATION DE CONCEPTION
+
+Le codage du projet a été réalisé en adéquation avec l'énoncé.
+
+Quelques modifications on été réalisées dans le fichier Application pour permettre les extensions. Le nombre de couleurs du fichier graph a été augmenté.
+Des constantes ont été rajoutées au fichier correspondant pour l'ajout de graphes.
+Les couleurs pour les encadrés ont été modifiées, la taille a aussi été remaniée pour permettre un affichage complet du texte de help jusqu'alors trop long.
+Les bactéries ne peuvent pas s'arrêter sur les nutriments (donc rester au centre des nutriments). Nous avons fait ce choix pour plus de dynamisme (notamment pour les bacteries simples sur les nutriments différenciés).
+Pour rajouter nos nom, une fonctions WriteNames a été ajouté à Application
+
+### EXTENSIONS
+
+#ACCES DIRECT A LA PROBABILITE DE GENERATION DES NUTRIMENTS
+
+Nous avons rajouté un accès à la probabilité sans passer par le fichier app.Json, directement comme un paramètre de la boite.
+
+#LES OBSTABLES
+
+la touche O (obstacle) permet d'ajouter un obstacle à la boite.
+
+Ce sont des corps circulaires infranchissables par les bactéries ou les nutriments. La taille varie entre deux extrêmes donnés dans le fichier app.json. 
+Il est impossible de poser une bactérie ou un nutriment sur un obstacle. 
+Ils sont dotés d'un compteur de collision en mode debug. 
+
+#MISE EN PLACE D'UNE SEPARATION (effet fondateur)
+
+la touche B (boite) permet de remodeler la séparation de la boite (l'enlever ou la mettre selon l'état précédent)
+
+Pour permettre d'observer le développement des individus de la boite de manière séparée, il est possible de rajouter une frontière au centre de la boite. Plus qu'un obstacle on a alors deux lieux séparés que l'on peut faire se rejoindre à notre convenance.
+
+Pour une meilleure exécution, toutes les bactéries et nutriments sur la zone lors de la mise en place de la séparation sont détruits. Il n'est pas possible de générer sur la barrière.
+Les sources de nutriments sont ramenées à 0 et peuvent se développer jusqu'à la limite.
+
+#POISON
+
+la touche N (nutriment) permet d'ajouter une source de poison. (suivant les proportions standards donné par le fichier app.json). 
+
+Ils sont définis comme des nutriments, et sont donc compris dans le gradient.
+
+Le poison impacte de manière différenciée les bactéries, mais toujours en baissant leur niveau d'énergie. L'impact est visible par le cercle vert autour des éléments malades.
+
+En mode debug, l'affichage donne en noir la quantité et en rouge la puissance du poison. L'énergie enlevée à la bactérie dépend de ces deux facteurs ainsi que de caractéristiques spécifiques.
+
+#POISONOUS BACTERIUM 
+
+la touche P (poisonous bacterium) permet d'ajouter un bacterie de ce nouveau type.
+
+Les poisonous bacterium ont la capacité de libérer du poison dans l'environnement. Elles ont un compteur d'énergie et un de poison. En effet, elles doivent constituer une réserve afin de pouvoir en libérer quand un certain laps de temps est passé. Seuls les nutriments bleus permettent la production de poison.
+
+Le gradient des poisonous est différent : comme elles ne consomment pas de poison elle ne vont pas le prendre en considération.
+
+Lors de la libération, elles voient pendant un court temps leur vitesse doubler, mais leur énergie consommée reste la même.
+
+OBSERVATION : quand le nombre de bactéries devient important il est recommandé d'éviter le mode debug pour une meilleure visibilité. Les observer en interactions avec des simple bacterium qui réagissent au poison est intéressant. Il est aussi possible de jouer sur la génération des nutriments pour favoriser les nutriments bleus si on veux observer le poison, et inversement si on veux voir le comportement des bactéries seules.
+
+#VIRUS
+
+la touche V (virus) permet d'ajouter un virus.
+
+Les virus sont conceptuellement à part. Ils peuvent muter, se diviser, se déplacer. Possèdent un niveau d'énergie propre et sont des corps circulaires. 
+Néanmoins, il est à souligner que le comportement, le dessin ainsi que les mises à jour en parallèle de la division suivetn des comportements qui leurs sont propres.
+Ils ne mangent pas de nutriments, leur énergie dépend uniquement de la bactérie hôte. 
+
+mode opératoire : 
+- déplacement dans la boite de pétri avec perception d'un gradient de bactérie
+- attaque d'une bactérie, le virus rentre dans sa cible et évolue à l'intérieur 
+- après un laps de temps, division en 4 virus et mort de la bactérie (et du virus original). Les individus de la nouvelle génération recommencent le processus.
+
+graph : un graphe d'infection a été réalisé. On y voit le nombre d'individus, le nombre d'infectés (en pourcentage) et la génération moyenne des virus en action.
+
+OBSERVATION : l'attaque sur des simple bacterium et des poisonous est pertinente. Il est conseillé d'éviter de générer trop de virus (un ou deux au début sont suffisants pour voir l'infection se propager) et de mettre en amont assez de bactéries (une petite dizaine). Un zoom sur les virus permet d'observer leur constitution particulière.
+
+pour observer juste le processus, mettre une seule bactérie dans la boite et un virus à côté.
+
+meilleurs stats d'observation :
+- température entre 30 et 50 degrés celsius 
+- une dizaine de bactéries
+- un ou deux virus
+- avantage porté aux nutriments verts.

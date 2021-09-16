@@ -1,0 +1,114 @@
+Jade Therras et Mathieu Reibel
+
+Journal pour le projet de programmation
+
+******************************************
+Semaine 1 (03/03/2020) :
+
+-lecture du projet 
+-inscription de notre binôme
+
+******************************************
+Semaine 2 (10/03/2020) :
+
+-début du codage
+-codage de la classe CircularBody (étape 1) ensemble 
+-peu de difficultés rencontrées
+
+******************************************
+Semaine 3 (17/03/2020) :
+
+-répartition des tâches de l’étape 2
+-Mathieu code PetriDish et Lab
+-Jade code Nutriment et retouche de CircularBody
+-difficultés à exécuter le Test2 (« Fatal error : no such file... »)
+-résolution du problème en déplaçant le fichier app.json (mal placé en amont)
+
+******************************************
+ Semaine 4 (24/03/2020) :
+
+-division du travail : répartition de la 1ère moitié de l’étape 3 
+-Jade s’occupe de la Différenciation des sources nutriments 
+-Mathieu code MutableNumber et MutableColour
+-test et répartition de la 2ème moitié
+
+******************************************
+ Semaine 5 (31/03/2020) :
+-Jade s’occupe du codage de Bacterium
+-peu de difficultés sur cette partie
+-Mathieu s’occupe du codage de SimpleBacterium
+-de légères difficultés pour coder la partie Mouvement rectiligne uniforme 
+-mise en accord d’une communication régulière pour informer l’autre de notre avancée
+
+******************************************
+ Semaine 6 (07/04/2020)
+-codage du dessin de la flagelle avec quelques difficultés
+-exemple d’obstacle : la flagelle est une ligne et pas une sinusoïde 
+-programmation de la détection du gradient avec de multiples incompréhensions 
+-souvent les solutions des problèmes étaient sur Moodle
+-coût en temps très élevé
+
+******************************************
+ Semaine 7 (14/04/2020)
+-codage des mutations et divisions, problèmes de compréhension et difficultés sur le clonage
+-résolution du problème à deux
+-Bilan pour éviter qu’à l’avenir le codage dure autant de temps
+-Conclusion du bilan : Mathieu doit privilégier la demande d’aide à Jade ou à notre tuteur plutôt que d’essayer de résoudre seul le problème ou de demander de l’aide à un autre binôme.
+-autre résolution importante que l’on va tester, diviser d’avantage le travail pour qu’on ait à programmer plus régulièrement, cela incite à communiquer et faciliter la compréhension du travail de l’autre
+-Mathieu suit le protocole de l'énoncé pour rendre le travail du rendu intermédiaire
+
+******************************************
+Semaine 8 (21/04/2020)
+-codade de l'étape 4
+-mise en pratique de la résolution
+-Mathieu code la première moitié du TwitchingBacterium
+-Jade code la deuxième moitié du TwitchingBacterium
+-Jade code la première moitié de SwarmBacterium
+-Aucune difficulté apparente
+
+******************************************
+Semaine 9 (28/04/2020)
+-Mathieu code la fin de SwarmBacterium
+-lecture du rapport du rendu intermédiaire
+-correction des fuites de mémoires
+-rectification des lignes de code trop verbeux
+-ajout de "const" sur beaucoup de fonctions
+-codage de l'étape 5
+-Jade code l'impact différencié des bactérie et la moitié de la partie statistique
+
+******************************************
+Semaine 10 (05/05/2020)
+-Mathieu code l'autre moitié de la partie statistique
+-difficulté à compter le nombre d'instances d'une classe
+-application de la résolution : demande d'aide à Jade
+-codage de l'étape 6
+-Jade code des extensions : Poison, PoisonBacterium et Obstacle
+
+******************************************
+Semaine 11 (13/05/2020)
+-brainstorming pour les idées des autres extensions de code
+-idée du mur séparateur et du virus ressortie
+-concertation et communication sur ce qu'il nous reste à faire : 
+    -> vérifier les réponses fournies dans le fichier REPONSE (véracité, pertinence et orthographe)
+    -> codage des idées d'extension ressorties lors du brainstorming
+    -> nous assurer que le code soit optimisé (bonne gestion de la mémoire et de la complexité)
+
+******************************************
+Semaine 12 (20/05/2020)
+
+-Reflexions sur des questions à poser à Jamila Sam ou à notre tuteur de projet : 
+    ->faut-il préparer la défense du projet?
+    ->Serait-ce pertinant que nos SimpleBacterium s'immobilisent sur un nutriment ou faudrait-il préférer le fait qu'ils effectuent des aller-retour dessus?
+    ->On a créé une classe Virus, conceptuellement un virus est différent d'une bactérie mais dans le cadre du projet des points communs sont visibles : Est-ce pertinent que la classe Virus reste indépendante de la Bacterium?
+    ->Dans le Graph de speed, qu'est ce qui est attendu? la vitesse moyenne globale ou seulement celle des bactéries ayant ce caractère mutable?
+    ->Devons-nous comment les changement effectués dans app.json effectués dans le cadre de nos extensions?
+-Questons rédigées et posées par Mathieu dans le forum : Questions/Discussions
+-répartition des tâches :
+    ->fichier réponse : vérification conjointe mais Jade s'occupe d'avantage du fond avec la vérification de la pertinence des réponses et Mathieu vérifie l'orthographe même si celà arrive que l'un effectue une remarque constructive dans le domaine attribué à l'autre
+    ->Jade code les extensions supplémentaires sans difficultés et écrit le Readme associé
+    ->Mathieu épluche tout le code pour commenter les lignes ambigues
+-Mathieu lit le Readme et corrige les fautes d'orthographes et vérifie la pertinence de ce qui est écrit
+-Reunion pour aviser de la suite (rendu), bilan de ce qu'il nous reste à faire
+-Présentation du projet à des proches pour vérifier la compréhension du readme et la prise en main par d'autre personne
+-Compilation des questions/réponses possibles lors de live
+

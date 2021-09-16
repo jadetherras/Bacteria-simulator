@@ -1,0 +1,298 @@
+#Projet programmation orientée objet (SSV)
+
+##REPONSES du groupe *86* (*Reibel Mathieu* & *Therras Jade*) 
+
+*************************************************
+##Q1.1
+
+-on utilise les fonctions contains() et isColliding() pour realiser les traitements des operateurs, afin d'eviter la duplication de code relative à ces fonctionnalités. On a déjà fait une surcharge de fonction pour l'opérateur >.
+
+*************************************************
+##Q1.2
+
+
+-L'operateur << est externe, il n'y aurait pas de sens d'écrire out.operator<<(class) car cela demanderait de modifier la class de out.
+Les operateur =, > et & definit entre deux circularBody sont en internes, puisqu'ils demandent de conparer les éléments de différentes instances d'une même classe. On préserve ainsi l'encapsulation.
+Pour l'opérateur > entre un circularBody et un Vec2d, on compare des types différents donc définir en interne n'aurait pas de sens même si cela reste possible, on définit donc en externe.
+
+*************************************************
+##Q1.3
+
+-La plupart des gros objets (CircularBody et Vec2d) passent par référence constante, sauf quand il doivent être modifiés (on enlève le const pour les set). Un passage par valeur fait une copie lourde, les minimiser permet une optimisation du programme.
+pour l'operateur > défini en externe, on est obligé de faire une copie puisque l'acces aux méthodes donne la possibilité de modifier les accès privés.
+
+*************************************************
+##Q1.4
+
+
+-De manière générale, on recherche les méthodes ne devant modifier aucun argument, les prédicats, comme les méthodes get dont le rôle est de retourner les attributs, les méthodes de contains et isColliding.
+
+*************************************************
+##Q2.1
+
+-Puisque qu'une boite de Pétri EST un objet circulaire, on fait en sorte que la classe PetriDish hérite de la classe CircularBody. Ainsi, PetriDish est une sous-classe de CircularBody.
+
+*************************************************
+##Q2.2
+
+-La fonction addBacterium et addNutriment retournent des booléens pour savoir si l'ajout de bactéries et nutiments ont été réalisés avec succès. Quant à la fonction drawOn, elle dessine la boîte de Pétri. Ces trois fonctions ne modifient donc pas les attributs de la classe PetriDish : ce sont des prédicats, d'où l'ajout du const. Les getters sont aussi déclarés comme const.
+
+*************************************************
+##Q2.3
+
+-Pour éviter la copie d'une boite de Pétri, on agit sur le constructeur de copie en écrivant la ligne suivante : "PetriDish (const PetriDish& Petri)=delete" qui interdit l'initialisation d'une boîte de Petri par copie d'une autre. Ensuite, on interdit l'affectation en agissant sur l'opération "=" via cette ligne "PetriDish& operator=(const PetriDish& Petri)=delete".
+
+*************************************************
+##Q2.4
+
+-Puisqu'il est absurde de faire vivre des bactéries et laisser des nutriments sans boîte, il est indispensable que l'effacement de la boîte de Pétri implique celui des bactérie et des nutiments.
+Ainsi, dans le codage du destructeur de la classe PetriDish, nous devons effacer les tableaux de pointeurs "bacteries" et "nutriments" en utilisant la méthode "reset". Par ailleurs il ne faut pas oublier de libérer la mémoire, en utilisant nullptr et delete. De plus, un element qui n'est pas ajouté à la boite est aussi supprimé de cette manière.
+*************************************************
+##Q2.5
+
+-La méthode Lab::drawOn permet de dessiner le support avec sa boîte de Pétri caractéristique donc son corps est un appel de fonction de la méthode drawOn de la boîte de Pétri rattaché à ce Laboratoire : PetriDish::drawOn. (boite.drawOn(attribut(s)))
+La méthode Lab::update permet de faire évoluer le support avec sa boîte de Pétri caractéristique en fonction tu temps. Ainsi le corps de cette fonction est un appel de fonction de la méthode update de la boîte de Pétri rattaché à ce Laboratoire : PetriDish::update.(boite.update(attribut(s)))
+
+*************************************************
+##Q2.7
+
+-Nos nutriments sont des corps circulaires, donc des circularbody avec des caracteristiques propres supplementaires. On peut donc definir la class nutriment comme une sous-classe de circular body, en utilisant "class Nutriment : public CircularBody" pour modeliser la tournure "est un" liant les deux classes.
+
+*************************************************
+##Q2.8
+
+-on cherche toujours à modeliser un maximum, et a aider à la représentation. Utiliser la classe Quantity permet d'être plus précis sur la nature du double. On pourrait par exemple utiliser deux doubles pour représenter une quantité et une température, mais ce sont deux notions totalement différentes ! définir des types plus spécifique permet donc de rendre compte de ces nuances et d'empêcher au programmeur de se perdre dans son code.
+
+*************************************************
+##Q2.9
+
+-on doit ajouter une méthode pour ajouter les nutriments, soit void addNutriment(Nutriment *nutriments); à notre class Lab. On doit ensuite pouvoir dessiner les Nutriments, on modifie donc la méthode drawOn de la class PetriDish, afin de permettre l'ajout de l'ensemble des éléments.
+
+*************************************************
+##Q2.10
+
+-en utilisant Application::getAppEnv on a acces au lab, il suffit ensuite d'utiliser la methode getTemperature pour prendre connaissance sans getter de la temperature de la boite de petri associée.
+
+*************************************************
+##Q2.11
+
+- premierement, il ne faut pas oublier le lien entre rayon et quantite pour les nutriments en ecrivant la fonction update, pour voir les éléments grossir en fonction de la quantite.
+On code les méthodes update et verifie que les méthode drawn prenne bien en compte les nutriments, dessinant alors en continue en fonction du changement de rayon.
+
+*************************************************
+##Q2.12
+
+- pour modifier la temperature on ajoute les methodes decreaseTemperature() et increaseTemperature() pour les class Lab (appelé dans Application) et PetriDish. la classe Lab se contente d'appeler la classe PetriDish pour modifier la boite.
+Pour permettre un reset de la température dans différent cas et sans duplication de code, on realise une methode resetTemp() dans lab, permettant comme sont nom l'indique de revenir à la valeur par défaut. Par la suite on code resetTemp() aussi dans Petridish. on l'appelle ensuite dans les methode reset, lié à la touche R. Pour la touche C on appelle aussi la fonction via Lab dans Application.
+
+*************************************************
+##Q3.1
+
+- On va faire hériter les classes qui doivent être dessinées (drawable) voire être mise à jour (updatable). Soit Drawable : Bacterium (prochainement), Nutriment, petridish et lab. Et updatable : Lab, Nutriment, Bacterium (prochainement), petridish et nutrimentgenerator.
+On reunit ainsi toute les classes qui possèdent les memes propriétés de maniere beaucoup plus claire. (Ce sont les objets qui évoluent au cours du temps)
+
+*************************************************
+##Q3.2
+
+-ces fonctions seront donc surchargé, on rajoute donc l'élément override après les prototypes (elle sont déjà virtuel hérité de drawable et updatable dans Nutriment. Ce sont des méthodes virtuelles qui fonctionneront alors de manière polymorphique.
+
+*************************************************
+##Q3.3
+
+- On la définit comme virtuelle et obligée d'être redéfinit dans les sous-classes au moyen du =0 on a donc comme prototype virtuel pure j::Value const&getConfig() const =0;
+Par la suite on la redéfinit, en n'oubliant pas override, dans les sous-classes.
+
+*************************************************
+##Q3.4
+
+- les fonctions drawOn et update utilise la fonction virtuel getConfig pour avoir les éléments relatif aux nutriments. La méthode étant virtuel pure dans la super classe, elles utilisent donc la fonction redéfinie dans les sous-classes, avec donc les caractères spécifiques aux nutriments A et B provenant du fichier de configuration.
+
+*************************************************
+##Q3.5
+
+- On a ajouté un élément nutriment generator dans le lab il faut maintenant le mettre en oeuvre. Pour ce faire on modifie les fonction reset et update pour quelles fassent appel aux fonctions correspondantes du generateur. 
+
+*************************************************
+##Q3.6
+
+-Les methodes suivantes devront procéder au plafonnage:
+->set() pour s'assurer que le main n'attribue aucune valeur en dehors des bornes
+->mutate() pour s'assurer que meme apres la mutation la valeur ne dépasse pas les bornes
+->le constructeur pour s'assurer que le MutableNumber soit initialisé avec des valeurs dans les bornes
+On crée une methode plafonner() et on l'appelle à chaque fois qu'on veut procéder au plafonnage pour éviter les duplications de codes.
+
+*************************************************
+##Q3.7
+
+-Le fait d'avoir inséré la méthode plafonner() dans le corps du constructeur nous permet de coder les méthodes positive() et probability() sans passer par des instances de MutableNumber, il y a juste à faire return MutableNumber(parametres)
+
+*************************************************
+##Q3.8
+
+- héritage : une bacterie est un corps circulaire, de plus elle est dessinable et adaptable. On va donc utiliser l'héritage multiple et modeliser Bacterium comme une sous classe CircularBody, Drawable, Updatable.
+- attributs : une bacterie possède une couleur (mutablecolor), une energie (quantity), une direction (vec2d), elle peut être abstinente (booleen) et  un ensemble de parametre (on rajoutera par la suite un compteur associer a son temps entre chaque repas) le reste de ces parametres proviennent des superclasses.
+- méthode : on definie une fonction move virtuel pure. Pour la division et la mutation, on les définie dans Bacterium divide, mutate (void). On definit aussi une fonction virtuel pure clone() que divide utilise. On definit une fonction pour la mort renvoyant un booleen.
+- constructeur : definit comme dans l'enoncé
+
+*************************************************
+##Q3.9
+
+- virtuelles pures : getConfig(), move(), clone().
+- virtuelles : les précédentes, drawOn(), update(), divite(), consumeEnergy(), ainsi que le destructeur car bacterium est une super-classe.
+
+*************************************************
+##Q3.10 
+
+- cette méthode est définie dans les sous-classes, indefinissable dans la super-classe, elle est virtuelle pure.
+
+*************************************************
+##Q3.11 
+
+- Pour retrouver la couleur SFML, on utilise la methode get() de mutable color.
+
+*************************************************
+##Q3.12
+
+- la méthode update utilise une methode qui sera obligatoirement redéfinie dans les sous-classes. La classe contenant des methodes virtuelles pures elle ne pourra être utilisée qu'au travers de ses sous-classes. Il n'y a donc aucun de problème.
+
+*************************************************
+##Q3.13
+
+- On va definir aussi une fonction getNutrimentColliding dans PetriDish, et Lab y fera appel.
+
+*************************************************
+##Q3.14 
+
+- pour simuler les bacteries on modifie update de PetriDish, afin qu'elle modifie aussi les bactérie. On rajoute un appel au update des bacteries tour à tour. (on modifie aussi le reset)
+
+*************************************************
+##Q3.15 
+
+- on modifie update, on appelle mort() et si c'est le cas, pour les nutriments et bacteries, on restitue la mémoire. La méthode mort() teste si l'énergie est nulle et renvoie un booléen.
+
+*************************************************
+##Q3.16
+
+-Conceptuellement, utiliser l'héritage signifie que la SimpleBacterium est soumise à une force tandis qu'utiliser la composition signifie que la SimpleBacterium possède une force qui la caractérise. Ainsi, il est plus pertinant de faire en sorte que la classe SimpleBacterium herite de la classe DiffEqFunction.
+Après cela, nous avons ajouté l'attribut vitesse au SimpleBacterium. Cela est cohérent de manière conceptuelle car la bactérie possède une vitesse caractéristique.
+De plus, cela facilite l'intégration du résultat de l'équation différentielle dans la classe et mieux gérer les collisions avec les bords.
+
+*************************************************
+##Q3.17
+
+-On considère t comme un attribut (défini dans le private de SimpleBacterium) que l'on initialise au niveau du constructeur.
+
+*************************************************
+##Q3.18
+
+-On considère rotation comme un attribut de Bacterium puisque toutes les bactéries ont une direction et un angle de direction. On définit donc ne nouvel attribut dans le private de Bacterium et on l'initialise à 0 dans son constructeur.
+
+*************************************************
+##Q3.19
+
+-On ajoute l'attribut puissance pour la classe PetriDish et la méthode getPositionScore(const Vec2d&) à cette meme classe pour pouvoir ajouter la methode getPositionScore(const Vec2d&) à la classe Lab.
+
+*************************************************
+##Q3.20
+
+-Puisque la maniere de basculer est susceptible de varier d'une bactérie à l'autre, il est pertinent d'ajouter comme attribut à SimpleBacterium le réel ancien_score (à initier dans le constructeur). Puisque l'ancien score est comparé avec le score de la nouvelle position pour éventuellement influencer le mouvement, il serait bien de le mettre à jour à chaque update. 
+
+*************************************************
+##Q3.21
+
+-On considère que les types de bactéries qui héritent de Bacterium sont susceptibles d'avoir des paramètres mutables différents. Il est donc  préférable de redéfinir la méthode mutate() dans la classe SimpleBacterium. Néanmoins toute bacteries possède une ensemble de paramètres mutables hérité de Bacterium. La méthode mutate() est donc virtuelle pure dans Bacterium.
+
+*************************************************
+##Q3.22
+
+-Puisque toutes les bactéries mutent, elles auront toutes des propriétés mutables que nous devrons gérer. Or les méthodes addProperty() et getProperty() sont créées justement pour les gérer. Ainsi, il vaudrait mieux les ajouter dans la classe Bacterium.
+
+*************************************************
+##Q3.23
+
+-"La méthode de division est la même pour toutes les bactéries" ainsi, il serait préférable de la coder dans la classe Bacterium. Ce sera la méthode de clonage qu'il faudra spécifier pour chaque type de bactéries (dont SimpleBacterium).
+
+ *************************************************
+##Q4.1
+
+
+-Puisque la TwitchingBacterium EST une bactérie, il est pertinant que cette classe hérite de la classe Bacterium. Mais aussi, la fonction f devra être redéfinie dans TwitchingBacterium donc elle devra aussi hériter de DiffEqFunction.
+
+*************************************************
+##Q4.2
+
+-Pour accéder aux paramètres caratérisiques de TwitchingBacterium, on procède de manière analoge à celle de SimpleBacterium : on stocke les titres et valeurs resptectives de ces parametres dans le map "parametre". On utilise getProperty() pour y accéder et addProperty() pour en ajouter.
+la méthode getConfig() est aussi utilise pour accéder aux caractéristiques propres.
+
+*************************************************
+##Q4.3
+
+
+-Il est important de redéfinir les méthode virtuelles quiétaient pures dans les super-classes : mutate, getConfig, move, clone et f. Ensuite, on redéfinit les autres méthodes qui s'executent de manière spécifique à la TwitchingBacterium : drawOn et update.
+
+*************************************************
+##Q4.4
+
+
+-Pour faciliter l'accès aux valeurs de TwitchingBacterium dans app.json, nous avons décidé de redéfinir la méthode getConfig. On rajoute aussi 2 gettters associés à ces deux paramètres des Twitching.
+Quantity get_cons_move() const; et Quantity get_cons_tent() const;
+
+
+*************************************************
+##Q4.5
+
+- On en utilise un type énuméré pour représenté les différents états, définit dans le hpp hors et avant la classe, de cette forme
+- enum etat {EAT, RETRACT, ATTRACT, DEPLOY, WAIT_TO_DEPLOY, IDLE};
+on pourra donc rajouter un attribut "état" à la bacterie et coder la méthode move() au moyen d'un switch entre les états, en fonction de l'état initial.
+
+*************************************************
+##Q4.6
+
+- on ajoute à PetriDish un attribut : un vecteur de Swarm. On ajoute la méthode addSwarm analogue à addBacterium dans lab et dans Petridish (mais pas besoin de tester si on est donc la boite de petri) 
+
+*************************************************
+##Q4.7
+
+- Une swarmBacterium hérite aussi de DiffEqFunction, pour pouvoir calculer la vitesse et le déplacement en fonction d'une force.
+
+*************************************************
+##Q4.8
+
+On redéfinit la méthode clone() pour produire une SwarmBacterium, ainsi que la méthode mutate. Enfin, la méthode getConfig est aussi redéfinie pour accéder à la partie spécifique du fichier de configuration.
+
+*************************************************
+##Q4.9
+
+Le but est de vérifier si un groupe avec l'identifiant demandé existe, si oui on veux y ajouter une swarmBacterium. On rajouter donc un methode getSwarmWithId dans lab (appel à celle de petridish) et dans petridish, renvoyant un pointeur vers un swarm. Dans petridish, si il n'y a pas de swarm a renvoyé on renvoie nullptr.
+
+*************************************************
+##Q4.10
+
+Le destructeur de swarm doit aussi détruire toute les bacteries associée.  Comme petridish s'occupe de la mémoire, on passe l'energie des bacteries a 0 pour qu'elles soient considérées comme mortes. Ensuite on libère la mémoire. 
+
+*************************************************
+##Q4.11
+
+le destructeur de SwarmBacterium appel la fonction de suppression du swarm. Elle n'est alors plus recensée.
+
+*************************************************
+##Q5.1
+
+les tests de type sont nocifs parce qu'il ne prennent pas en compte les possibles classes futures.
+
+*************************************************
+##Q5.2
+
+justement, au cas ou une nouvelle classe soit rajoutée. La méthode fonctionnant avec une bacterie quelconque appelle une méthode virtuelle pure de la classe bacterium, qui est de toute manière redéfinie dans les sous-classes. 
+Par la suite, quand il faudra appeller la méthode eat des bacteries, elle fera appelle à la méthode eatenby sur une bacterie quelconque. Elle renverra au nutriment specifique avec un appel pour la bacterie spécifique.
+
+*************************************************
+##Q5.3
+
+Le choix initial était basé sur 2 vecteur. Nous voulions être sûr que le graphe et le titre aurait le même identificateur. Nous avons donc opté pour une structure "Graphique" regroupant le pointeur unique et le titre. Nous avons ensuite modélisé l'ensemble de graph comme un vecteur de pointeur sur des Graphique. Les identifiants sont lié à la place dans le vecteur.
+
+*************************************************
+##Q5.4
+
+On peux compter le nombre d'instance soit avec les constructeurs soit avec une méthode polymorphique qui modifie directement la map. (le deuxième cas a été mis en oeuvre puis abandonné car les instances était recompté à chaque update, meme si le côté orienté objet était tentant
+
